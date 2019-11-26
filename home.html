@@ -4,7 +4,8 @@
     <title>Virginia Dooley || Fullstack Software Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
@@ -13,19 +14,26 @@
 <!--navbar -->
 
 <nav class="uk-navbar-container" uk-navbar>
+
     <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav ">
+        <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="">About</a></li>
             <li class="uk-parent"><a href="">Projects</a></li>
             <li class="uk-parent"><a href="">Contact</a></li>
         </ul>
     </div>
 
-    <div class="uk-navbar-right">
+    <div class="uk-navbar-right icon-padding">
         <ul class="uk-navbar-nav">
-            </span><a href="https://github.com/VirginiaDooley" uk-icon="icon: github"></a>
-            </span><a href="https://www.linkedin.com/in/virginia-dooley/" uk-icon="icon: linkedin"></a>
-            </span><a href="https://twitter.com/vcdooley" uk-icon="icon: twitter"></a>
+            <li>
+                <a href="https://github.com/VirginiaDooley" uk-icon="icon: github"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/virginia-dooley/" uk-icon="icon: linkedin"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/vcdooley" uk-icon="icon: twitter"></a>
+            </li>
         </ul>
     </div>
 
@@ -35,26 +43,64 @@
 
 <div class="uk-container uk-margin-small uk-margin-auto-left uk-margin-auto-right">
 
-<!--about-->
+    <!--about-->
 
-<div class="uk-margin-small .uk-container-large uk-text-center">
-    <h2>This is all about me.</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
+    <div class="uk-tile tile-style2">
+        <div class="tile-title">
+            <p>Hi, I'm Virginia</p>
+        </div>
+        <div class="uk-margin-small uk-text-left">
+            <p>I'm a Fullstack Software Engineer with a passion
+                for social impact. With experience in Ruby on Rails,
+                JavaScript, and React.js and a background in
+                international development, I pivoted to
+                coding after working with start ups and charities
+                struggling with outdated products and systems.
+                I help mission driven companies craft inclusive
+                solutions and experiences that address real world
+                challenges. I enjoy volunteering in my community
+                and engaging in the London women in tech ecosystem.
+            </p>
+        </div>
+    </div>
 
-<!--about-->
+    <!--about-->
 
-<!--cards-->
+    <!--cards-->
 
 
     <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
 
         <div>
+            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"
+                     alt="Pinboard">
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default">
+                    <h3>Pinboard</h3>
+                    <p>A Pinterest-style inspiration board built with React x Redux + Rails API</p>
+                    <a class="uk-button uk-button-default" href="https://github.com/VirginiaDooley/pinboard">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                     alt="Pinboard">
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default">
+                    <h3>Nova CRM</h3>
+                    <p>A client manager and impact evaluation tool built with Ruby on Rails and vanilla JS; o-Auth and
+                        devise for login.</p>
+                    <a class="uk-button uk-button-default" href="https://github.com/VirginiaDooley/pinboard">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <p uk-margin>
-                    <h3 class="uk-card-title">Project Title 1</h3>
-                    <a class="uk-button uk-button-default" href="#">Link</a>
+                <h3 class="uk-card-title">Project Title 2</h3>
+                <a class="uk-button uk-button-default" href="#">Link</a>
                 </p>
             </div>
         </div>
@@ -62,17 +108,8 @@
         <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <p uk-margin>
-                    <h3 class="uk-card-title">Project Title 2</h3>
-                    <a class="uk-button uk-button-default" href="#">Link</a>
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <div class="uk-card uk-card-default uk-card-body">
-                <p uk-margin>
-                    <h3 class="uk-card-title">Project Title 3</h3>
-                    <a class="uk-button uk-button-default" href="#">Link</a>
+                <h3 class="uk-card-title">Project Title 3</h3>
+                <a class="uk-button uk-button-default" href="#">Link</a>
                 </p>
             </div>
         </div>
@@ -84,8 +121,8 @@
         <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <p uk-margin>
-                    <h3 class="uk-card-title">Project Title 1</h3>
-                    <a class="uk-button uk-button-default" href="#">Link</a>
+                <h3 class="uk-card-title">Project Title 1</h3>
+                <a class="uk-button uk-button-default" href="#">Link</a>
                 </p>
             </div>
         </div>
@@ -93,8 +130,8 @@
         <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <p uk-margin>
-                    <h3 class="uk-card-title">Project Title 1</h3>
-                    <a class="uk-button uk-button-default" href="#">Link</a>
+                <h3 class="uk-card-title">Project Title 1</h3>
+                <a class="uk-button uk-button-default" href="#">Link</a>
                 </p>
             </div>
         </div>
@@ -102,57 +139,57 @@
         <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <p uk-margin>
-                    <h3 class="uk-card-title">Project Title 1</h3>
-                    <a class="uk-button uk-button-default" href="#">Link</a>
+                <h3 class="uk-card-title">Project Title 1</h3>
+                <a class="uk-button uk-button-default" href="#">Link</a>
                 </p>
             </div>
         </div>
 
     </div>
 
-<!--cards-->
+    <!--cards-->
 
-<!--form-->
-<div class="uk-container uk-margin uk-container-small uk-align-left">
-    <form method=POST action="mailto:vcdooley@gmail.com" enctype="text/plain">
-        <fieldset class="uk-fieldset">
+    <!--form-->
+    <div class="uk-container uk-margin uk-container-small uk-align-left">
+        <form method=POST action="mailto:vcdooley@gmail.com" enctype="text/plain">
+            <fieldset class="uk-fieldset">
 
-            <legend class="uk-legend">Say hi.</legend>
+                <legend class="uk-legend">Say hi.</legend>
 
-            <div class="uk-margin">
-                <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Name">
-            </div>
+                <div class="uk-margin">
+                    <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Name">
+                </div>
 
-            <div class="uk-margin">
-                <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Email">
-            </div>
+                <div class="uk-margin">
+                    <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Email">
+                </div>
 
-            <textarea class="uk-input uk-form-width-medium uk-form-small">Write your message here.</textarea>
+                <textarea class="uk-input uk-form-width-medium uk-form-small">Write your message here.</textarea>
 
-            <div class="uk-margin">
-                <label>
-                    <input class="uk-checkbox" type="checkbox">
-                    By sending this message,<br>I consent to sharing my email.
-                </label>
-            </div>
+                <div class="uk-margin">
+                    <label>
+                        <input class="uk-checkbox" type="checkbox">
+                        By sending this message,<br>I consent to sharing my email.
+                    </label>
+                </div>
 
-            <button class="uk-button uk-button-primary">Send</button>
+                <button class="uk-button uk-button-primary">Send</button>
 
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
 
-</div>
+    </div>
 
 
-<!--form-->
+    <!--form-->
 
-<!--footer-->
+    <!--footer-->
 
-<div class="uk-container uk-margin uk-container-small uk-align-right">
+    <div class="uk-container uk-margin uk-container-small uk-align-right">
 
-</div>
+    </div>
 
-<!--footer -->
+    <!--footer -->
 </div>
 
 
