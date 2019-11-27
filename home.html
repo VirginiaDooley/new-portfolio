@@ -13,13 +13,13 @@
 
 <!--navbar -->
 
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar id="nav">
 
     <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="">About</a></li>
-            <li class="uk-parent"><a href="">Projects</a></li>
-            <li class="uk-parent"><a href="">Contact</a></li>
+            <li class="uk-active"><a href="#about">About</a></li>
+            <li class="uk-parent"><a href="#projects">Projects</a></li>
+            <li class="uk-parent"><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
@@ -41,11 +41,13 @@
 
 <!--navbar -->
 
+<!--main container-->
+
 <div class="uk-container uk-margin-small uk-margin-auto-left uk-margin-auto-right">
 
     <!--about-->
 
-    <div class="uk-tile tile-style">
+    <div class="uk-tile tile-style" id="about">
         <div class="tile-title">
             <p>Hi, I'm Virginia</p>
         </div>
@@ -69,7 +71,7 @@
     <!--projects-->
 
 
-    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid id="projects">
         <!-- project 1-->
 
         <div>
@@ -172,24 +174,13 @@
 
     </div>
 
+    <!--main container-->
+
     <!--projects-->
 
-    <!--    &lt;!&ndash;footer tile 1&ndash;&gt;-->
-    <!--    <div class="uk-tile tile-style uk-align-left">-->
-    <!--        <div class="tile-title">-->
-    <!--            <p>Blog</p>-->
-    <!--        </div>-->
-    <!--        <div class="uk-margin-small uk-text-left">-->
-    <!--            <p>My learning journey through coding bootcamp.-->
-    <!--            </p>-->
-    <!--            <button class="uk-button uk-button-primary">Send</button>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <!--footer tile 1-->
-
     <!--form-->
-    <div class="uk-tile tile-style uk-align-right">
+
+    <div class="uk-tile tile-style uk-align-right" id="contact">
         <div class="tile-title">
             <p>Say hello</p>
         </div>
@@ -224,15 +215,41 @@
             </div>
         </div>
     </div>
+
     <!--form-->
-    <!--footer-->
 
-    <div class="uk-container uk-margin uk-container-small uk-align-right">
+</div>
 
+<!--footer-->
+
+<nav class="uk-navbar-container" uk-navbar id="footer">
+
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#nav">Back to Top</a></li>
+            <li class="uk-active"><a href="#about">About</a></li>
+            <li class="uk-parent"><a href="#projects">Projects</a></li>
+            <li class="uk-parent"><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 
-    <!--footer -->
-</div>
+    <div class="uk-navbar-right icon-padding">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="https://github.com/VirginiaDooley" uk-icon="icon: github"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/virginia-dooley/" uk-icon="icon: linkedin"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/vcdooley" uk-icon="icon: twitter"></a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<!--footer -->
 
 
 </body>
