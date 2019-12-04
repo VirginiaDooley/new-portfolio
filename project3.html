@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Save Earth!</title>
+    <title>Pinboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 </head>
 <body>
+
+<!--navbar -->
+
+<nav class="uk-navbar-container" uk-navbar id="nav">
+
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="home.html">Home</a></li>
+            <li class="uk-active"><a href="home.html#about">About</a></li>
+            <li class="uk-parent"><a href="projects.html">Projects</a></li>
+            <li class="uk-parent"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right icon-padding">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="https://github.com/VirginiaDooley" uk-icon="icon: github"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/virginia-dooley/" uk-icon="icon: linkedin"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/vcdooley" uk-icon="icon: twitter"></a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<!--navbar -->
+
+<!--main container-->
+
+<div class="uk-container uk-margin">
+
+    <!--projects-->
+
+    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid id="projects">
+        <!-- project 1-->
+
+        <div>
+            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+                     alt="Pinboard">
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default">
+                    <h3>Pinboard</h3>
+                    <p>A Pinterest-style inspiration board built with React x Redux + Rails API</p>
+                    <a class="uk-button uk-button-secondary"
+                       href="https://github.com/VirginiaDooley/pinboard">Github</a>
+                </div>
+            </div>
+        </div>
+        <!-- project 1-->
+
+    </div>
+    <!--projects-->
+
+    <!--main container-->
+
+    <!--bottom container-->
+
+</div>
+
+<!--footer-->
+
+<nav class="uk-navbar-container" uk-navbar id="footer">
+
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#nav">Back to Top</a></li>
+            <li class="uk-active"><a href="home.html#about">About</a></li>
+            <li class="uk-parent"><a href="projects.html">Projects</a></li>
+            <li class="uk-parent"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right icon-padding">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="https://github.com/VirginiaDooley" uk-icon="icon: github"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/virginia-dooley/" uk-icon="icon: linkedin"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/vcdooley" uk-icon="icon: twitter"></a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<!--footer -->
+
 
 </body>
 </html>
