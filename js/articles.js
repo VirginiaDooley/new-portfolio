@@ -13,6 +13,7 @@ const getBlogs = () => {
             // You can now even select part of that html as you would in the regular DOM
             // Example:
             let blogArticles = {};
+            //select all from page by tag
             let blogTitle = doc.querySelector('.post-title').innerText;
             let blogLink = doc.querySelector('.post-preview a').innerText;
             let blogText = doc.querySelector('.post-preview p').innerText;
