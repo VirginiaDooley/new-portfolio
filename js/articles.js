@@ -24,7 +24,7 @@ const getBlogs = () => {
             blogArticles.blogText = blogText;
             blogArticles.blogMeta = blogMeta;
 
-            const title = document.querySelector('#blog-title > h3');
+            const title = document.querySelector('#blog-title > h3 > a');
             title.textContent = blogTitle;
 
             const text = document.querySelector('#blog-text > p');
