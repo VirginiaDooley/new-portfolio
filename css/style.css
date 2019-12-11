@@ -70,6 +70,6 @@
     left: 0px;
 }
 
-
-
-
+.freebirdFormviewerViewFooterFooterContainer {
+    display: none !important
+}
